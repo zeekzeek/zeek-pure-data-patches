@@ -1,17 +1,17 @@
-#N canvas 88 23 1237 784 10;
+#N canvas 0 23 1280 709 10;
 #N canvas 249 23 1652 986 dahood 0;
 #X obj 104 715 dac~ 1 2;
 #X obj 241 503 vsl 20 40 0 1 0 0 empty empty empty 0 -9 0 10 -261234
--1 -1 0 1;
+-1 -1 1950 1;
 #X obj 103 562 *~;
 #X obj 143 563 *~;
 #N canvas 0 50 450 278 (subpatch) 0;
-#X array channelR 1.57878e+07 float 2;
-#X coords 0 1 1.57878e+07 -1 600 100 1 0 0;
+#X array channelR 1.28166e+07 float 2;
+#X coords 0 1 1.28166e+07 -1 600 100 1 0 0;
 #X restore 277 635 graph;
 #N canvas 0 50 450 278 (subpatch) 0;
-#X array channelL 1.57878e+07 float 2;
-#X coords 0 1 1.57878e+07 -1 600 100 1 0 0;
+#X array channelL 1.28166e+07 float 2;
+#X coords 0 1 1.28166e+07 -1 600 100 1 0 0;
 #X restore 278 536 graph;
 #X msg 62 169 read -resize \$1 channelL channelR;
 #X obj 62 188 soundfiler;
@@ -34,7 +34,7 @@ metro. trigger by bang;
 #X obj 934 522 r sampleSize;
 #X floatatom 900 559 5 0 0 0 - - -;
 #X obj 264 233 hsl 128 15 -1 1 0 0 empty empty empty -2 -8 0 10 -262144
--1 -1 0 1;
+-1 -1 6372 1;
 #X floatatom 324 253 5 0 0 0 - - -;
 #X text 423 316 manipulate phasor to modify playback;
 #X msg 266 198 0.008;
@@ -53,13 +53,13 @@ metro. trigger by bang;
 #X text 761 291 scroll here;
 #X obj 631 345 / 100;
 #X obj 681 298 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--203904 -1 -1 251 1;
+-203904 -1 -1 6133 1;
 #X obj 680 324 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--204800 -1 -1 251 1;
+-204800 -1 -1 6133 1;
 #X obj 669 344 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--261234 -1 -1 251 1;
+-261234 -1 -1 6133 1;
 #X obj 699 389 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--228856 -1 -1 251 1;
+-228856 -1 -1 6133 1;
 #X text 104 22 next step might want to use writesf instead of openpanel
 ;
 #X obj 358 122 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -76,7 +76,7 @@ metro. trigger by bang;
 #X obj 359 157 metro 6000;
 #X msg 736 183 0;
 #X obj 374 201 hsl 128 15 -10 10 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 0 1;
+-1 -1 6344 1;
 #X obj 316 205 / 100;
 #X floatatom 512 165 5 0 0 0 - - -;
 #X obj 512 184 / 1000;
@@ -352,13 +352,13 @@ metro. trigger by bang;
 #X obj 1192 652 s l7;
 #X obj 1220 652 s l8;
 #X obj 1100 700 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--203904 -1 -1 1031 1;
+-203904 -1 -1 6133 1;
 #X obj 1100 716 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--204800 -1 -1 1031 1;
+-204800 -1 -1 6133 1;
 #X obj 1100 731 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--261234 -1 -1 1031 1;
+-261234 -1 -1 6133 1;
 #X obj 1100 746 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--228856 -1 -1 1031 1;
+-228856 -1 -1 6133 1;
 #X obj 1239 682 r seqtime5;
 #X obj 1238 699 r seqtime6;
 #X obj 1237 714 r seqtime7;
@@ -406,25 +406,25 @@ metro. trigger by bang;
 #X obj 1526 501 random 1000;
 #X obj 1525 483 random 1000;
 #X obj 1367 768 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--203904 -1 -1 742 1;
+-203904 -1 -1 6133 1;
 #X obj 1366 785 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--204800 -1 -1 742 1;
+-204800 -1 -1 6133 1;
 #X obj 1369 802 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--261234 -1 -1 742 1;
+-261234 -1 -1 6133 1;
 #X obj 1381 823 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--228856 -1 -1 742 1;
+-228856 -1 -1 6133 1;
 #X obj 1300 793 / 100;
 #X obj 1310 803 / 100;
 #X obj 1320 813 / 100;
 #X obj 1330 823 / 100;
 #X obj 1385 848 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--203904 -1 -1 5985 1;
+-203904 -1 -1 6133 1;
 #X obj 1381 868 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--204800 -1 -1 5985 1;
+-204800 -1 -1 6133 1;
 #X obj 1381 883 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--261234 -1 -1 5985 1;
+-261234 -1 -1 6133 1;
 #X obj 1381 898 hsl 128 15 -10 1000 0 0 empty empty empty -2 -8 0 10
--228856 -1 -1 5985 1;
+-228856 -1 -1 6133 1;
 #X obj 1303 858 / 100;
 #X obj 1313 868 / 100;
 #X obj 1323 878 / 100;
@@ -800,13 +800,13 @@ metro. trigger by bang;
 #X obj 32 140 s openpanel;
 #X obj 306 551 s pitchrand;
 #X obj 93 236 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 149 1;
+-1 -1 7118 1;
 #X obj 93 268 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -203904
--1 -1 149 1;
+-1 -1 7118 1;
 #X obj 92 302 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 149 1;
+-1 -1 7118 1;
 #X obj 92 335 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 149 1;
+-1 -1 7118 1;
 #X obj 160 251 s seqtime1;
 #X obj 159 284 s seqtime2;
 #X obj 158 317 s seqtime3;
@@ -822,7 +822,7 @@ metro. trigger by bang;
 #X obj 116 141 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #X obj -70 182 vsl 11 40 0 0.5 0 0 empty empty empty 0 -9 0 10 -258113
--1 -1 0 1;
+-1 -1 3900 1;
 #X obj -70 225 s master_volume;
 #X obj 393 106 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
@@ -836,7 +836,7 @@ metro. trigger by bang;
 10 -204800 -1 -1 0 1;
 #X obj 206 483 s pitch;
 #X obj 737 55 hsl 100 100 0 1 0 0 empty empty empty -2 -8 0 10 -232576
--1 -1 0 1;
+-1 -1 7704 1;
 #X obj 734 38 r display;
 #X floatatom 526 155 5 0 0 0 - - -;
 #X obj 526 139 r vpos;
@@ -978,8 +978,8 @@ metro. trigger by bang;
 #X obj 224 628 s random_off;
 #X obj 662 442 r disp;
 #X obj 92 368 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -224821
--1 -1 149 1;
-#N canvas 1029 176 178 293 metro 1;
+-1 -1 7118 1;
+#N canvas 969 232 365 241 metro 1;
 #X obj 26 53 metro;
 #X obj 26 77 counter;
 #X obj 26 5 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1 1
@@ -1046,7 +1046,7 @@ metro. trigger by bang;
 #X msg 156 459 0.0021;
 #X msg 156 444 0.0021;
 #X obj 77 397 hsl 742 10 0 1000 0 0 empty empty empty -2 -8 0 10 -224821
--1 -1 0 1;
+-1 -1 35400 1;
 #X obj 74 412 s barmom;
 #X obj 89 350 r barmom;
 #X obj 414 592 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
@@ -1075,13 +1075,13 @@ metro. trigger by bang;
 #X msg 173 -11 1000;
 #X msg 209 -11 2000;
 #X obj 282 238 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 1073 1;
+-1 -1 7118 1;
 #X obj 282 270 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -203904
--1 -1 1073 1;
+-1 -1 7118 1;
 #X obj 281 304 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 1073 1;
+-1 -1 7118 1;
 #X obj 281 337 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 1073 1;
+-1 -1 7118 1;
 #X obj 264 238 bng 15 250 50 0 empty empty empty 17 7 0 10 -252018
 -1 -1;
 #X obj 264 270 bng 15 250 50 0 empty empty empty 17 7 0 10 -203904
@@ -1100,7 +1100,7 @@ metro. trigger by bang;
 #X msg 290 320 0;
 #X msg 291 204 ZERO;
 #X obj 281 370 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -224821
--1 -1 1073 1;
+-1 -1 7118 1;
 #X msg 321 253;
 #X msg 321 320;
 #X msg 321 286;
@@ -1115,13 +1115,13 @@ metro. trigger by bang;
 #X obj 348 286 s seqtime6;
 #X obj 349 253 s seqtime5;
 #X obj 470 239 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 730 1;
+-1 -1 7118 1;
 #X obj 470 271 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -203904
--1 -1 730 1;
+-1 -1 7118 1;
 #X obj 469 305 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 730 1;
+-1 -1 7118 1;
 #X obj 469 338 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 730 1;
+-1 -1 7118 1;
 #X obj 452 239 bng 15 250 50 0 empty empty empty 17 7 0 10 -252018
 -1 -1;
 #X obj 452 271 bng 15 250 50 0 empty empty empty 17 7 0 10 -203904
@@ -1140,7 +1140,7 @@ metro. trigger by bang;
 #X msg 478 321 0;
 #X msg 479 205 ZERO;
 #X obj 469 371 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -224821
--1 -1 730 1;
+-1 -1 7118 1;
 #X msg 509 254;
 #X msg 509 321;
 #X msg 509 287;
@@ -1155,13 +1155,13 @@ metro. trigger by bang;
 #X obj 535 320 s seqtime11;
 #X obj 535 353 s seqtime12;
 #X obj 658 240 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 6943 1;
+-1 -1 7118 1;
 #X obj 658 272 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -203904
--1 -1 6943 1;
+-1 -1 7118 1;
 #X obj 657 306 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -204800
--1 -1 6943 1;
+-1 -1 7118 1;
 #X obj 657 339 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -252018
--1 -1 6943 1;
+-1 -1 7118 1;
 #X obj 640 240 bng 15 250 50 0 empty empty empty 17 7 0 10 -252018
 -1 -1;
 #X obj 640 272 bng 15 250 50 0 empty empty empty 17 7 0 10 -203904
@@ -1180,7 +1180,7 @@ metro. trigger by bang;
 #X msg 666 322 0;
 #X msg 667 206 ZERO;
 #X obj 657 372 hsl 150 10 0 1000 0 0 empty empty empty -2 -8 0 10 -224821
--1 -1 6943 1;
+-1 -1 7118 1;
 #X msg 697 255;
 #X msg 697 322;
 #X msg 697 288;
